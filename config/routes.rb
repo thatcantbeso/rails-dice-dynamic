@@ -9,5 +9,5 @@ Rails.application.routes.draw do
 
   get("/dice/5/4" , { :controller => "zebra", :action => "jellyfish" })
 
-  get("/dice/:number_sides/:number_rolls" , { :controller => "zebra", :action => "salamander" })
+  get("/dice/:number_rolls/:number_sides" , { :controller => "zebra", :action => "salamander" })
 end
