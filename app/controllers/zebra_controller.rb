@@ -7,7 +7,16 @@ class ZebraController <ApplicationController
 
   def turtle
 
+    @rolls = []
+
+  2.times do
+    die = rand(1..6)
+
+    @rolls.push(die)
+
     render({ template: "game_templates/2d6"})
+    end
+
   end
 
   def bison
@@ -28,6 +37,6 @@ class ZebraController <ApplicationController
 
   def salamander
 
-    render({ template: "game_templates/dice/:number_sides/:number_rolls"})
+    #render({ template: "game_templates/dice/xdx"})
   end
 end
